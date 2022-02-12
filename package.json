@@ -6,7 +6,7 @@
   "author": "farazpatankar",
   "license": "MIT",
   "engines": {
-    "node": "12.X"
+    "node": "14.X"
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
