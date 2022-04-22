@@ -6,14 +6,14 @@
   "author": "farazpatankar",
   "license": "MIT",
   "engines": {
-    "node": "14.X"
+    "node": "16.X"
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
     "ghost": "4.44.0",
-    "ghost-storage-cloudinary": "^2.2.0",
+    "ghost-storage-cloudinary": "2.2.1",
     "lyra": "github:TryGhost/lyra#main",
-    "mysql2": "^2.2.5"
+    "mysql2": "2.3.3"
   },
   "scripts": {
     "start": "node index.js",
