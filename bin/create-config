@@ -9,7 +9,7 @@ var fs = require("fs");
 var path = require("path");
 
 var appRoot = path.join(__dirname, "..");
-
+var contentPath = path.join(appRoot, "/content/");
 function createConfig() {
   var fileStorage, storage;
 
@@ -75,7 +75,7 @@ function createConfig() {
       port: process.env.PORT,
     },
     paths: {
-      contentPath: path.join(appRoot, "/content/"),
+      contentPath: contentPath,
     },
   };
 
@@ -84,3 +84,4 @@ function createConfig() {
 
 var configContents = JSON.stringify(createConfig(), null, 2);
 fs.writeFileSync(path.join(appRoot, "config.production.json"), configContents);
+fs.mkdirSync(path.join(contentPath, "/data/"), { recursive: true });
