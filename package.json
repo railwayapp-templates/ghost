@@ -16,7 +16,7 @@
     "mysql2": "2.3.3"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "bin/create-config && node index.js",
     "postinstall": "bin/alter-auth-method && bash bin/cloudinary.sh && bash bin/themes.sh"
   }
 }
